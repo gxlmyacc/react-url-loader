@@ -1,19 +1,19 @@
-# react-asset-loader
+# react-url-loader
 
-[![NPM version](https://img.shields.io/npm/v/react-asset-loader.svg?style=flat)](https://npmjs.com/package/react-asset-loader)
-[![NPM downloads](https://img.shields.io/npm/dm/react-asset-loader.svg?style=flat)](https://npmjs.com/package/react-asset-loader)
+[![NPM version](https://img.shields.io/npm/v/react-url-loader.svg?style=flat)](https://npmjs.com/package/react-url-loader)
+[![NPM downloads](https://img.shields.io/npm/dm/react-url-loader.svg?style=flat)](https://npmjs.com/package/react-url-loader)
 
 This is a `file-loader` wrapper for React and Webpack, solve the image relative path issues when HTML and CSS are not in the same directory.
 
 ## install
 
-To begin, you'll need to install `react-asset-loader`:
+To begin, you'll need to install `react-url-loader`:
 
 ```bash
-npm install react-asset-loader --save-dev
+npm install react-url-loader --save-dev
 ```
 
-`react-asset-loader` works like
+`react-url-loader` works like
 [`file-loader`](https://github.com/webpack-contrib/file-loader), but solve a file-loader`s relative path issue when image, css and html in diffrence directorys.
 
 ## purpose
@@ -63,13 +63,13 @@ then webpack will translate `images/1.png` to `../images/1.png`, this does solve
 ```
 
 webpack will also translate `images/2.png` to `../images/2.png`, it leads html load `2.png` failure, so file-loader can't tell the picture from HTML or CSS.
-`react-asset-loader` just solving this issues!
+`react-url-loader` just solving this issues!
 your webpack config can be like this:
 
 ```js
 {
   test: /\.(png|jpe?g|gif|svg)(\?\S*)?$/,
-  use: [{ loader: 'react-asset-loader', options: { publicPath: '', publicStylePath: '../', name: 'images/[name].[ext]?[hash]' }]
+  use: [{ loader: 'react-url-loader', options: { publicPath: '', publicStylePath: '../', name: 'images/[name].[ext]?[hash]' }]
 }
 ```
 
@@ -84,14 +84,14 @@ or
       limit: 2048,
       publicPath: '',
       publicStylePath: '../',
-      fallback: 'react-asset-loader',
+      fallback: 'react-url-loader',
       name: 'images/[name].[ext]?[hash]'
     }
   ]
 }
 ```
 
-`react-asset-loader` will choose `publicPath` or `publicStylePath` based on the image from `react component render function` or `style file`.
+`react-url-loader` will choose `publicPath` or `publicStylePath` based on the image from `react component render function` or `style file`.
 
 ## License
 
