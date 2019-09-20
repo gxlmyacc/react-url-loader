@@ -1,0 +1,37 @@
+{
+  "name": "react-asset-loader",
+  "version": "0.0.1",
+  "description": "a file-loader for React that solve the image relative path issues when HTML and CSS not in the same directory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gxlmyacc/react-asset-loader.git"
+  },
+  "keywords": [
+    "react-asset-loader",
+    "file-loader",
+    "react",
+    "webpack"
+  ],
+  "author": "gxlmyacc",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gxlmyacc/react-asset-loader/issues"
+  },
+  "homepage": "https://github.com/gxlmyacc/react-asset-loader#readme",
+  "engines": {
+    "node": ">= 6.9.0 || >= 8.9.0"
+  },
+  "dependencies": {
+    "loader-utils": "^1.1.0"
+  },
+  "peerDependencies": {
+    "webpack": "^3.0.0 || ^4.0.0"
+  },
+  "devDependencies": {
+    "file-loader": "^1.1.11"
+  }
+}
