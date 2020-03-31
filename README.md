@@ -93,6 +93,33 @@ or
 
 `react-url-loader` will choose `publicPath` or `publicStylePath` based on the image from `react component render function` or `style file`.
 
+you can also use `outputPath` or `outputStylePath`:
+
+```js
+{
+  test: /\.(png|jpe?g|gif|svg)(\?\S*)?$/,
+  use: [{ loader: 'vue-asset-loader', options: { outputPath: '', outputStylePath: '../', name: 'images/[name].[ext]?[hash]' }]
+}
+```
+
+or
+
+```js
+{
+  test: /\.(png|jpe?g|gif|svg)(\?\S*)?$/,
+  use: [{
+    loader: 'url-loader',
+    options: {
+      limit: 2048,
+      outputPath: '',
+      outputStylePath: '../',
+      fallback: 'vue-asset-loader',
+      name: 'images/[name].[ext]?[hash]'
+    }
+  ]
+}
+```
+
 ## License
 
 [MIT](./LICENSE)
