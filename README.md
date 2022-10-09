@@ -98,7 +98,15 @@ you can also use `outputPath` or `outputStylePath`:
 ```js
 {
   test: /\.(png|jpe?g|gif|svg)(\?\S*)?$/,
-  use: [{ loader: 'vue-asset-loader', options: { outputPath: '', outputStylePath: '../', name: 'images/[name].[ext]?[hash]' }]
+  use: [
+    { 
+      loader: 'react-url-loader', 
+      options: { 
+        outputPath: '', 
+        outputStylePath: '../', 
+        name: 'images/[name].[ext]?[hash]' 
+      }
+  ]
 }
 ```
 

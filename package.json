@@ -1,8 +1,9 @@
 {
   "name": "react-url-loader",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "a file-loader for React that solve the image relative path issues when HTML and CSS not in the same directory",
-  "main": "index.js",
+  "main": "src/index.js",
+  "module": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -26,12 +27,12 @@
     "node": ">= 6.9.0 || >= 8.9.0"
   },
   "dependencies": {
-    "loader-utils": "^1.1.0"
+    "loader-utils": "^2.0.2"
   },
   "peerDependencies": {
-    "webpack": "^3.0.0 || ^4.0.0"
+    "webpack": "^3.0.0 || ^4.0.0 || ^5.0.0"
   },
   "devDependencies": {
-    "file-loader": "^1.1.11"
+    "file-loader": "^6.2.0"
   }
 }
