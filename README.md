@@ -2,6 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/react-url-loader.svg)](https://badge.fury.io/js/react-url-loader)
 [![license](https://img.shields.io/npm/l/react-url-loader.svg)](https://github.com/gxlmyacc/react-url-loader/blob/master/LICENSE)
+[![npm monthly downloads](https://img.shields.io/npm/dm/react-url-loader.svg)](https://npmjs.com/package/react-url-loader)
 
 [English](https://github.com/gxlmyacc/react-url-loader/blob/master/README.md) | [中文](https://github.com/gxlmyacc/react-url-loader/blob/master/README_CN.md)
 
