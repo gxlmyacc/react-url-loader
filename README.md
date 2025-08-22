@@ -216,9 +216,8 @@ src/
 ## 🎯 Use Cases
 
 - **React Applications**: Perfect for React projects with complex asset structures
-- **Component Libraries**: When components have their own assets and styles
-- **Multi-page Applications**: When different pages output to different directories
-- **Style-heavy Projects**: Projects with extensive use of SCSS/SASS/LESS
+- **Self-managed Images**: When project images are managed in project image directories and introduced through require/import
+- **Multi-output Directories**: When build outputs are distributed to different directories
 
 ## 🤝 Contributing
 
